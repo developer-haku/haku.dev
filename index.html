@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html style="user-select: none;">
+
+<head>
+    <title>Haku.dev</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="css/glitch.css">
+    <link rel="stylesheet" type="text/css" href="css/caret.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.all.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#111">
+    <meta name="msapplication-TileColor" content="#111">
+    <meta name="theme-color" content="#111">
+</head>
+
+<body>
+    <!-- menu modified from CSS Gooey Menu (Version 3)[https://codepen.io/lbebber/pen/pvwZJp] by Lucas Bebber -->
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="hamburger hamburger-1"></span>
+            <span class="hamburger hamburger-2"></span>
+            <span class="hamburger hamburger-3"></span>
+        </label>
+        <a href="#" class="menu-item">
+            <i class="fas fa-envelope"></i> <span class="menu-item-name">Email</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fab fa-twitter"></i> <span class="menu-item-name">Twitter</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fab fa-github"></i> <span class="menu-item-name">GitHub</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-book"></i> <span class="menu-item-name">My Docs</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas">文</i> <span class="menu-item-name">Blog CN</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-home"></i> <span class="menu-item-name">Blog</span>
+        </a>
+    </nav>
+
+    <!-- glitch effect modified from Glitch Clock[https://codepen.io/museum404/pen/FsGtu] by Konstantin -->
+    <div class="screen glitch">
+        <div class="name">
+            <span namae-data="" id="namae"></span>
+            <span id="caret">_</span>
+            <div id="simple-intro">
+                <br><br>
+                Hey what's up? Welcome to my site!<br>
+                Call me Haku here.<br>
+                I am a developer.
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/swap.js"></script>
+
+
+    <div id="footer">
+        <div class="footer-glitch" data-text="">
+            © 2019
+            <script>
+                new Date().getFullYear() > 2019 && document.write("- " + new Date().getFullYear());
+            </script>
+            , HAKU.DEV. All rights reserved.
+        </div>
+        <script>
+            this_year = new Date().getFullYear() > 2019 ? "- " + new Date().getFullYear() : ""
+            text = "© 2019 " + this_year + ", HAKU.DEV. All rights reserved.";
+            console.log(this_year)
+            document.getElementsByClassName("footer-glitch")[0].setAttribute("data-text", text);
+        </script>
+    </div>
+</body>
+
+</html>
