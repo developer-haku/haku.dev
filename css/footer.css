@@ -84,7 +84,7 @@
 .footer-glitch:after {
     content: attr(data-text);
     position: absolute;
-    left: 38px;
+    left: 9px;
     text-shadow: -1px 0 red;
     top: 0;
     color: white;
@@ -163,7 +163,7 @@
 .footer-glitch:before {
     content: attr(data-text);
     position: absolute;
-    left: 39px;
+    left: 12px;
     text-shadow: 1px 0 aqua;
     top: 0;
     color: white;
